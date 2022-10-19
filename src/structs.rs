@@ -59,9 +59,12 @@ pub fn run() {
     }
 
     let mut p = Person::new("John", "Doe");
+
     println!("Person {} {}", p.first_name, p.last_name);
     println!("Person {}", p.full_name());
+
     p.set_last_name("Williams");
+
     println!("Person {}", p.full_name());
     println!("Person Tuple {:?}", p.to_tuple());
 }
